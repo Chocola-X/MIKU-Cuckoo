@@ -103,12 +103,12 @@ if ($sticky && $this->is('index') || $this->is('front')) {
     <?php $this->pageLink('下一页', 'next'); ?>
     <div class="changePage changePage-end">
       <span class="infinite-scroll-request">加载中...</span>
-      <span class="infinite-scroll-last">到底了啦</span>
+      <span class="infinite-scroll-last">到底了喵～</span>
     </div>
     <?php if($this->getTotal() > 1 && $this->getTotalPage() !== 1){ ?>
       <div class="changePage changePage-load">加载更多</div>
     <?php }else{ ?>
-      <div class="changePage">到底了啦</div>
+      <div class="changePage">到底了喵～</div>
     <?php } ?>
     <?php else : ?>
   <div class="mdui-card page-card mdui-shadow-10">

@@ -20,8 +20,9 @@ $this -> need('includes/header.php');
   <div class="index-container">
     <div class="mdui-col-md-8">
         <div class="mdui-card archive-card mdui-hoverable">
+        <img src="<?php staticFiles('images/404.png') ?>" alt="404" style="width: 400px; height: auto; display: block; margin: auto;"></img>
           <div class="archive-title">
-            <p>不要看这里！这里没有文章呐！</p>
+          <p style="font-size: 24px; font-weight: bold;">喵？！不要看这里喵！这里没有文章喵！！！</p>
           </div>
         </div>
     </div>

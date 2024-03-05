@@ -456,8 +456,41 @@ function Footer(){
   $content .= ($moebei) ? '<span><a href="https://icp.gov.moe" target="_blank">萌ICP备</a><a href="https://icp.gov.moe/?keyword='.$num2.'" target="_blank">'.$num2.'</a>号</span>' : '';
   $content .= ($beian) ? '<span><a href="//beian.miit.gov.cn">'.Helper::options()->beian.'</a></span>' : '';
   $content .= ($gabeian) ? '<span><img style="vertical-align:middle" src="'.staticFiles('images/beian.png', 1).'" height="20" width="20" alt="公安备案"> <a href="//www.beian.gov.cn/portal/registerSystemInfo?recordcode='.$num.'">'.Helper::options()->gabeian.'</a></span>' : '';
-  echo $footer.'<p>'.$copy.$content.'<br><br><span id="cuckoo-copy">Theme <a href="https://github.com/bhaoo/cuckoo" target="_blank">Cuckoo</a> by <a href="https://dwd.moe/" target="_blank">Bhao</a>｜Powered By <a href="http://www.typecho.org" target="_blank">Typecho</a></span></p>';
+  $systemUptime = getServerUptime(); ////
+  echo $footer.'<p>'.$copy.$content.'<br><br><span id="cuckoo-copy">Theme <a href="https://github.com/bhaoo/cuckoo" target="_blank">Cuckoo</a> by <a href="https://dwd.moe/" target="_blank">Bhao</a>｜Powered By <a href="http://www.typecho.org" target="_blank">Typecho</a>｜猫猫服务器已运行:'.$systemUptime.'喵~</span></p>';
 }
+
+//////
+function getServerUptime() {
+    // 尝试使用 uptime -s 获取上线时间
+	date_default_timezone_set('Asia/Shanghai');
+    $startupTime = shell_exec('uptime -s');
+
+    // 如果 uptime -s 不可用或输出格式不正确，使用当前系统时间作为上线时间
+    if (empty($startupTime) || !preg_match('/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/', $startupTime)) {
+        $startupTime = date('Y-m-d H:i:s');
+    }
+
+    // 将上线时间点字符串转换为 DateTime 对象
+    $startupDateTime = new DateTime($startupTime);
+
+
+    // 获取当前时间的 DateTime 对象
+    $now = new DateTime();
+
+    // 计算时间差
+    $interval = $now->diff($startupDateTime);
+
+    // 返回格式化后的时间差
+    //return $interval->format('%a天%H小时%I分钟%S秒');
+	return $interval->format('%a天%H时%I分');
+}
+
+// 调用函数并打印服务器自上线以来的运行时间
+
+
+////
+
 
 // 友链插件
 function Links($type = 0) {

@@ -35,6 +35,35 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <script src="<?php staticFiles('js/pjax.min.js') ?>"></script>
 <script src="<?php staticFiles('js/cuckoo.min.js') ?>"></script>
 <script src="<?php staticFiles('js/comments.min.js') ?>"></script>
+<script src="<?php staticFiles('js/jquery.min.js') ?>"></script>
+<script src="<?php staticFiles('js/snowfall.jquery.js') ?>"></script>
+
+
+<!-- snowfall.js setting-->
+<script type="text/javascript">
+$('#snowwrap').snowfall({
+  image : [
+"<?php staticFiles('images/flake01_a.png') ?>",
+"<?php staticFiles('images/flake02_c.png') ?>",
+"<?php staticFiles('images/flake03_c.png') ?>",
+"<?php staticFiles('images/flake04_a.png') ?>",
+"<?php staticFiles('images/flake05_a.png') ?>",
+"<?php staticFiles('images/flake06_b.png') ?>"
+  ],
+flakeColor:"#000",
+shadow:false,
+minSize:20,
+maxSize:80,
+flakeCount:40,
+minspeed:0.2,
+maxSpeed:2,
+});
+</script>
+<!-- /snowfall.js setting -->
+
+
+
+
 <script>hljs.highlightAll();</script>
 <?php otherJs();$this->footer();otherPjax(); ?>
 </body>

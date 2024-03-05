@@ -71,17 +71,18 @@ $this -> need('includes/header.php');
       <?php $this->pageLink('下一页', 'next'); ?>
       <div class="changePage changePage-end">
         <span class="infinite-scroll-request">加载中...</span>
-        <span class="infinite-scroll-last">到底了啦</span>
+        <span class="infinite-scroll-last">到底了喵～</span>
       </div>
       <?php if($this->getTotal() > 1){ ?>
           <div class="changePage changePage-load">加载更多</div>
       <?php }else{ ?>
-          <div class="changePage">到底了啦</div>
+          <div class="changePage">到底了喵～</div>
       <?php } ?>
       <?php else : ?>
         <div class="mdui-card archive-card mdui-hoverable">
+        <img src="<?php staticFiles('images/404.png') ?>" alt="404" style="width: 400px; height: auto; display: block; margin: auto;"></img>
           <div class="archive-title">
-            <p>不要看这里！这里没有文章呐！</p>
+          <p style="font-size: 24px; font-weight: bold;">喵？！不要看这里喵！这里没有文章喵！！！</p>
           </div>
         </div>
       <?php endif;

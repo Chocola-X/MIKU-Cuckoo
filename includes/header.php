@@ -55,14 +55,16 @@ $accentColor = $this->options->accentColor;
   <link rel="stylesheet" href="<?php staticFiles('css/fancybox.min.css') ?>">
   <link rel="stylesheet" href="<?php staticFiles('css/katex.min.css') ?>">
   <link rel="stylesheet" href="<?php staticFiles('css/cuckoo.min.css') ?>">
+  <link rel="stylesheet" href="<?php staticFiles('css/style.min.css') ?>">
   <script src="<?php staticFiles('js/tocbot.min.js') ?>"></script>
   <script src="<?php staticFiles('js/nprogress.min.js') ?>"></script>
   <?php fontFamily(); $this->header('antiSpam=&commentReply='); bgUrl(); otherCss();?>
 </head>
 
-<body class="mdui-theme-primary-<?php echo $primaryColor; ?> mdui-theme-accent-<?php echo $accentColor; ?>">
-  <div class="background"><div class="index-filter"></div></div>
 
+
+<body class="mdui-theme-primary-<?php echo $primaryColor; ?> mdui-theme-accent-<?php echo $accentColor; ?>">
+  <div class="background"><div id="snowwrap" class="animated fadeIn timing01"></div></div>
   <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-appbar-scroll-hide">
     <div class="mdui-toolbar">
       <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '.drawer', swipe: 'true', overlay: 'false'}">
@@ -99,4 +101,5 @@ $accentColor = $this->options->accentColor;
       <?php otherMenu(); ?>
     </ul>
     <?php drawerBottom() ?>
+    <img src="<?php staticFiles('images/drawer.png') ?>" alt="底部图片" style="width: 100%; height: auto; display: block; margin-top: -260px;"></img>
   </div>

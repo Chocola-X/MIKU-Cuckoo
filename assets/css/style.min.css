@@ -1,0 +1,11 @@
+/*飘雪画布*/
+#snowwrap {
+    position: fixed;
+    width: 100%;
+    height: 120%;
+    top: 0px;
+    left: 0px;
+    z-index: -5;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0);
+}
