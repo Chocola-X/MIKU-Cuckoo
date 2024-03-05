@@ -15,6 +15,8 @@
     <img src="https://img.shields.io/github/downloads/bhaoo/Cuckoo/total?style=flat-square" />
 </p>
 
+## 这个分支已经把所有图片相关元素替换成初音，并且在背景加上了动态漂浮效果，在一些页面插入了图片作为背景，让主题更好看
+
 ## 特点
 
 - 全站 PJAX + 评论 AJAX
