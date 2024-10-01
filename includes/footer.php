@@ -53,8 +53,8 @@ $('#snowwrap').snowfall({
 flakeColor:"#000",
 shadow:false,
 minSize:20,
-maxSize:80,
-flakeCount:40,
+maxSize:60,
+flakeCount:20,
 minspeed:0.2,
 maxSpeed:2,
 });
