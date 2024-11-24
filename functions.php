@@ -217,7 +217,12 @@ function randPic(){
   if ($setting == 'api.ohmyga.cn') {
     $output = 'https://api.ohmyga.cn/wallpaper/?rand='.$rand;
   }elseif ($setting == 'local') {
-    $openfile = glob(Helper::options()->themeFile("Cuckoo", "random/*"), GLOB_BRACE);
+    $openfile = [];
+    $dir = Helper::options()->themeFile("Cuckoo", "random/*");
+    $extensions = ['jpg', 'png', 'gif', 'webp'];
+    foreach ($extensions as $ext) {
+      $openfile = array_merge($openfile, glob($dir . "*.$ext"));
+    }
     $img = array_rand($openfile);
     preg_match('/\/random\/\S*\.(jpg|png|gif|webp)/', $openfile[$img], $out);
     $output = Helper::options()->siteUrl.'usr/themes/Cuckoo'.$out[0];
