@@ -1,15 +1,15 @@
 <?php
 /**
- * 「Cuckoo」—— 做一只“布咕鸟”
+ * 「Cuckoo-Miku」—— 初音未来Typecho主题，基于Bhao的Cucko主题二次开发
  * 主题文档：<a href="https://cuckoo.owo.show">https://cuckoo.owo.show</a>
- * 项目地址：<a href="https://github.com/bhaoo/cuckoo">https://github.com/bhaoo/cuckoo</a>
- * 感谢 娃子wazi 提供图片授权！
+ * 项目地址：<a href="https://github.com/AMDRadeonRin/MIKU-Cuckoo">https://github.com/AMDRadeonRin/MIKU-Cuckoo</a>
+ * 在原主题的基础上加入漂浮元素，抽屉底图，404页面图标，以及改善对musl环境的支持
  *
- * @package Cuckoo
- * @author Bhao
+ * @package Cuckoo-Miku
+ * @author GTX690战术核显卡导弹
  * @version 2.1.0
- * @link https://dwd.moe
- * @date 2020-02-02
+ * @link https://nekopara.uk
+ * @date 2024-11-11
  */
 
 if(!defined('__TYPECHO_ROOT_DIR__')) exit;
