@@ -2,7 +2,7 @@
 /**
  * 「Cuckoo-Miku」—— 初音未来Typecho主题，基于Bhao的Cucko主题二次开发
  * 主题文档：<a href="https://cuckoo.owo.show">https://cuckoo.owo.show</a>
- * 项目地址：<a href="https://github.com/AMDRadeonRin/MIKU-Cuckoo">https://github.com/AMDRadeonRin/MIKU-Cuckoo</a>
+ * 项目地址：<a href="https://github.com/Chocola-X/MIKU-Cuckoo">https://github.com/Chocola-X/MIKU-Cuckoo</a>
  * 在原主题的基础上加入漂浮元素，抽屉底图，404页面图标，以及改善对musl环境的支持
  *
  * @package Cuckoo-Miku

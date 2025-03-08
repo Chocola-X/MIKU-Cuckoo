@@ -17,6 +17,12 @@
 
 ## 这个分支已经把所有图片相关元素替换成初音，并且在背景加上了动态漂浮效果，在一些页面插入了图片作为背景，让主题更好看
 
+### 演示demo:
+https://demo.nekopara.uk
+
+### 个人博客：
+https://www.nekopara.uk
+
 ## 特点
 
 - 全站 PJAX + 评论 AJAX
@@ -38,16 +44,13 @@
 - 丰富的后台设置
 - ...
 
-## 下载
-
-获取主题的方法：前往 [Releases](https://github.com/bhaoo/Cuckoo/releases) 或者 下方QQ群 下载主题
 
 ### 开发版
 
 如需下载开发版可以前往 [这里](https://github.com/bhaoo/Cuckoo/releases/tag/Dev) 进行下载哦！
 
 ## 安装
-
+下载整个项目,放到主题文件夹即可。
 > [!WARNING]
 > 务必要将文件名改为 “Cuckoo” ，以免发生奇奇怪怪的错误。
 
