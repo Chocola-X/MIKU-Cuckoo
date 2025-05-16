@@ -214,8 +214,8 @@ function randPic(){
   $setting = Helper::options()->randimg;
   $setting_cdn = Helper::options()->randimgCdn;
   $rand = mt_rand(0,999);
-  if ($setting == 'api.ohmyga.cn') {
-    $output = 'https://api.ohmyga.cn/wallpaper/?rand='.$rand;
+  if ($setting == 'demo.nekopara.uk') {
+    $output = 'https://demo.nekopara.uk/miku_pic/?rand='.$rand;
   }elseif ($setting == 'local') {
     $openfile = [];
     $dir = Helper::options()->themeFile("Cuckoo", "random/*");

@@ -172,7 +172,7 @@ function themeConfig($form) {
             ], '静态文件源', '推荐选择 “JsDelivr源”', 'local').
         $config->input('staticCdn', '自定义静态文件CDN', '在这里填写你自己的CDN(如 api.xxx.xxx)，以获取静态文件(需在上方选择自定义CDN)').
         $config->select('randimg',
-          ['api.ohmyga.cn' =>   'OMGのAPI',
+          ['demo.nekopara.uk' =>   '主题配套API',
             'local'         =>   '本地',
             'cdn'           =>   '自定义 CDN',
             '9jojo'         =>   '9JOJO'
