@@ -23,6 +23,7 @@ $accentColor = $this->options->accentColor;
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv='content-language' content='zh-cn'>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
   <?php if ($this->is('index')): ?>
