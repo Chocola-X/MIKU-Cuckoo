@@ -23,6 +23,8 @@ https://demo.nekopara.uk
 ### 个人博客：
 https://www.nekopara.uk
 
+## 请注意，本主题与最新版Typecho 1.3.0 存在兼容性问题，为了稳定性请使用建国验证的1.2.1版本。
+
 ## 特点
 
 - 全站 PJAX + 评论 AJAX
